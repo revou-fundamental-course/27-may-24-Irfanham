@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lambda Academy Profile</title>
 </head>
 <body>
-    
+    <nav>
+        <!-- Logo -->
+        <div class="logo-icon">
+            <h1>Lamda Academy</h1>
+        </div>
+        <!-- Navbar -->
+        <section>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#profile" class="nav-item">Our Profile</a>
+            <a href="#achievement" class="nav-item">Achievement</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+        </section>
+    </nav>
+    <!-- Main Content -->
+    <section>
+        <!-- Home -->
+        <section id="home">
+            <header class="header-container">
+                <div class="header-text">
+                    <h1>Hi <span id="name">Guest!</span>, Welcome To Website</h1>
+                    <h2><span>Empowering</span> Students to Become <span>The Next Generation</span> 
+                        <br>
+                        of <span>Innovators</span></h2>
+                        <div class="change-content">
+                            <input class="change-name"type="text" name="change-name" id="change-name" placeholder="Enter Your Name" title="To Rename"/>
+                            <button class="change-button" type="submit" title="To Rename">Send</button>
+                        </div>
+                        </div>
+            </header>
+            <article>
+                <div class="banner-container"></div>
+            </article>
+        </section>
+        <!-- Profile -->
+        <section id="profile" >
+            <h1 class="title">About<span> Our Academy</span></h1>
+            <div class="profile">
+                <div class="profile-content">
+                    <h3 class="copy">A leading academy focused on developing young talents in science and technology. We believe that every individual has the potential to become a future leader and innovator. 
+                        Therefore, we are committed to providing a supportive and inspiring learning environment where students can develop their talents, explore new ideas, and reach their full potential.</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Vision & Mission -->
+        <section id="vision-mission" class="vision-mission">
+            <h1 class="title-2">Vision &<span> Mission</span></h1>
+            <div class="vision">
+                <div class="vision-details">
+                    <p>Our school is dedicated to providing a comprehensive education that fosters the intellectual, social, and emotional growth of our students.</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- Facilities -->
+        <section id="facilities">
+            <header>
+                <h1 class="title">Our <span>Facilities</span></h1>
+            </header>
+            <article class="facility-list">
+                <div>
+                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+                </div>
+
+                <div>
+                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+                </div>
+
+                <div>
+                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+                </div>
+            </article>
+        </section>
+        <!-- Achievement -->
+        <section id="achievement">
+            <header>
+                <h1 class="title">Our <span>Achievement</span></h1>
+            </header>
+            <article class="facility-list">
+                <div>
+                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+                </div>
+
+                <div>
+                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+                </div>
+
+                <div>
+                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
+                    <h5>Free Refill</h5>
+                </div>
+            </article>
+        </section>
+        <!-- Message -->
+        <section id="message-us" class="message-us-section">
+            <header>
+                <h1 class="title">Message <span>Us</span></h1>
+            </header>
+
+            <section class="message-container">
+                <!-- Form -->
+                <section>
+                    <form class="form-content" action="" >
+                        <div class="form-group">
+                            <!--form for input name-->
+                            <label  class="label-input" for="name">Nama <span>:</span></label>
+                            <input type="text" name="" id="name" placeholder="Masukkan Nama Anda"/><br>
+                        </div>
+                        <div class="form-group">
+                            <!--form for input date of birth-->
+                            <label class="label-input" for="tanggal-lahir">Tanggal Lahir <span>:</span></label>
+                            <input type="date" name="" id="tanggal-lahir" placeholder="Tanggal Lahir"/><br>
+                        </div>
+        
+                        <div class="form-group">
+                             <!--form for input sex-->
+                            <label class="label-input-radio" for="jenis-kelamin">Jenis Kelamin <span>:</span></label>
+                            <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki"/>
+                            <label for="laki-laki">Laki-Laki</label>
+                            <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan"/>
+                            <label for="perempuan">Perempuan</label><br>
+                        </div>
+        
+                        <div class="form-group">
+                            <!--form for input messages-->
+                            <label class="label-input" for="pesan">Pesan <span>:</span></label>
+                            <textarea name="" id="pesan" placeholder="Masukkan Pesan Anda" rows="4"></textarea><br>
+                        </div>
+        
+                        <div class="form-group">
+                            <!--form submit-->
+                            <button type="submit">Kirim</button>
+                        </div>
+                       
+                    </form>
+                </section>
+
+                <!-- Result -->
+                <section class="result-container">
+                    <div class="form-result"></div>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+            <p>&copy; 2024 Lamda Academy. Made by <b>Love</b>.</p>
+            <a href="https://storyset.com/education">Education illustrations by Storyset</a>
+            
+    </footer>
+
 </body>
 </html>
