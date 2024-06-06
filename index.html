@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Lambda Academy Profile</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="top-button" title="Go to top"><span class="material-symbols-outlined">
+        keyboard_double_arrow_up
+        </span></button>
     <nav>
         <!-- Logo -->
         <div class="logo-icon">
@@ -26,18 +30,28 @@
         <section id="home">
             <header class="header-container">
                 <div class="header-text">
-                    <h1>Hi <span id="name">Guest!</span>, Welcome To Website</h1>
+                    <h1>Hi <span id="username">Guest</span>!, Welcome To Website</h1>
                     <h2><span>Empowering</span> Students to Become <span>The Next Generation</span> 
                         <br>
                         of <span>Innovators</span></h2>
                         <div class="change-content">
-                            <input class="change-name"type="text" name="change-name" id="change-name" placeholder="Enter Your Name" title="To Rename"/>
-                            <button class="change-button" type="submit" title="To Rename">Send</button>
+                            <input class="change-name"type="text" name="change-name" id="rename" placeholder="Enter Your Name (default Guest)" title="To Rename"/>
+                            <button class="change-button" id="rename-submit" type="submit" title="To Rename">Send</button>
                         </div>
                         </div>
             </header>
-            <article>
-                <div class="banner-container"></div>
+            <article class="banner-container">
+                <div class="banner-slide">
+                    <img src="/asset/banner-1.svg" alt="banner-1" />
+                </div>
+                <div class="banner-slide">
+                    <img src="/asset/banner-2.svg" alt="banner-2" />
+                </div>
+                <div class="banner-slide">
+                    <img src="/asset/banner-3.svg" alt="banner-3" />
+                </div>
+                <a class="prev" onclick="nextSlides(-1)">❮</a>
+                <a class="next" onclick="nextSlides(1)">❯</a>
             </article>
         </section>
         <!-- Profile -->
@@ -61,46 +75,89 @@
 
         </section>
         <!-- Facilities -->
-        <section id="facilities">
+        <section id="facilities" class="facility">
             <header>
                 <h1 class="title">Our <span>Facilities</span></h1>
             </header>
             <article class="facility-list">
-                <div>
-                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+
+                <div class="facility-item">
+                    <div class="front-part">
+                        <span style="height: 50px; width: 50px; border: 1px solid black;"></span>
+                        <h4>Item 1</h4>
+                    </div>
+                    <div class="back-part">
+                        <span></span>
+                        <h4></h4>
+                        <p></p>
+                    </div>
                 </div>
 
-                <div>
-                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+                <div class="facility-item">
+                    <div class="front-part">
+                        <span style="height: 50px; width: 50px; border: 1px solid black;"></span>
+                        <h4>Item 2</h4>
+                    </div>
+                    <div class="back-part">
+                        <span></span>
+                        <h4></h4>
+                        <p></p> 
+                            
+                    </div>
                 </div>
 
-                <div>
-                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+                <div class="facility-item">
+                    <div class="front-part">
+                        <span style="height: 50px; width: 50px; border: 1px solid black;"></span>
+                        <h4>Item 3</h4>
+                    </div>
+                    <div class="back-part">
+                        <span></span>
+                        <h4></h4>
+                        <p></p>
+                    </div>
                 </div>
+
+                <div class="facility-item">
+                    <div class="front-part">
+                        <span style="height: 50px; width: 50px; border: 1px solid black;"></span>
+                        <h4>Item 4</h4>
+                    </div>
+                    <div class="back-part">
+                        <span></span>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+
+               
             </article>
         </section>
         <!-- Achievement -->
         <section id="achievement">
             <header>
-                <h1 class="title">Our <span>Achievement</span></h1>
+                <h1 class="title-2">Our <span>Achievement</span></h1>
             </header>
-            <article class="facility-list">
-                <div>
-                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+            <article class="achievement-list">
+                <div class="achievement-card">
+                    <img src="https://picsum.photos/200" alt="Library">
+                    <h3><a href="#achievement">Academic Excellence</a></h3>
+                    <p>Our students have won numerous prestigious national and international awards in science and technology.</p>
                 </div>
-
-                <div>
-                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+                <div class="achievement-card">
+                    <img src="https://picsum.photos/200" alt="Science Lab">
+                    <h3><a href="#achievement">Sports Achievements</a></h3>
+                    <p>Our students have won various titles at the level of competition, e.g. local, regional, national level in various sports.</p>
                 </div>
-
-                <div>
-                    <div style="height: 50px; width: 50px; border: 1px solid black;"></div>
-                    <h5>Free Refill</h5>
+                <div class="achievement-card">
+                    <img src="https://picsum.photos/200" alt="Sports Facilities">
+                    <h3><a href="#achievement">Research and Innovation</a></h3>
+                    <p>Our research team has published hundreds of scientific articles in internationally renowned journals.</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="https://picsum.photos/200" alt="Sports Facilities">
+                    <h3><a href="#achievement">Community Service</a></h3>
+                    <p>We actively organize community service programs to help communities around the academy.</p>
                 </div>
             </article>
         </section>
@@ -113,11 +170,11 @@
             <section class="message-container">
                 <!-- Form -->
                 <section>
-                    <form class="form-content" action="" >
+                    <form id="message-form" class="form-content" action="" >
                         <div class="form-group">
                             <!--form for input name-->
                             <label  class="label-input" for="name">Nama <span>:</span></label>
-                            <input type="text" name="" id="name" placeholder="Masukkan Nama Anda"/><br>
+                            <input type="text" name="" id="nama" placeholder="Masukkan Nama Anda"/><br>
                         </div>
                         <div class="form-group">
                             <!--form for input date of birth-->
@@ -126,12 +183,14 @@
                         </div>
         
                         <div class="form-group">
-                             <!--form for input sex-->
-                            <label class="label-input-radio" for="jenis-kelamin">Jenis Kelamin <span>:</span></label>
-                            <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki"/>
-                            <label for="laki-laki">Laki-Laki</label>
-                            <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan"/>
-                            <label for="perempuan">Perempuan</label><br>
+                             <!--form for input gender-->
+                             <div class="gender-group">
+                                    <label class="label-input-radio" for="jenis-kelamin">Jenis Kelamin <span>:</span></label>
+                                    <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki"/>
+                                    <label for="laki-laki">Laki-Laki</label>
+                                    <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan"/>
+                                    <label for="perempuan">Perempuan</label><br>
+                             </div>
                         </div>
         
                         <div class="form-group">
@@ -150,7 +209,7 @@
 
                 <!-- Result -->
                 <section class="result-container">
-                    <div class="form-result"></div>
+                    <div class="form-result" id="message-value"></div>
                 </section>
             </section>
         </section>
@@ -162,6 +221,6 @@
             <a href="https://storyset.com/education">Education illustrations by Storyset</a>
             
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
