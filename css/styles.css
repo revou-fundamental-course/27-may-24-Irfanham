@@ -57,11 +57,6 @@
     
     .burger {
         display: none;
-        /* flex-direction: column;
-        justify-content: space-around;
-        width: 25px;
-        height: 25px;
-        cursor: pointer; */
     }
     
     .burger .line {

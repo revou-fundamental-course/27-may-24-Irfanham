@@ -188,6 +188,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     
     slides[slideIndex - 1].style.display = "block"
-    // setInterval(()=>{nextSlides(1)},5000);// Change image every 5 seconds
+    setInterval(()=>{nextSlides(1)},5000);// Change image every 5 seconds
     }
 
